@@ -2,6 +2,10 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
 }
 
+.dropdown {
+  padding-right: 50px;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -40,20 +44,7 @@ main {
   .lb-nav-btns {
     border: 0;
   }
-  
-  .lb-nav {
-    position: absolute;
-    top: 45%;
-    transform: translate(0, -100%);
-    padding: 0.8rem;
-    width: 40px;
-    height: 40px;
-    z-index: 1;
-    background-color: #fff;
-    border-radius: 100px;
-    border: 0;
-  }
-  
+   
   .lb-nav.prev {
     left: 4%;
   }
@@ -73,6 +64,24 @@ main {
     animation-name: fade;
     animation-duration: 0.7s;
   }
+
+  .attribution {
+    font-size: 16px;
+  }
+
+  /*cart*/
+
+  #basketContainer {
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .trash {
+    padding-left: 15px;
+  }
+
   
   @-webkit-keyframes fade {
     from {
